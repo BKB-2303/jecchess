@@ -154,10 +154,10 @@ const Home = () => {
     </button>
 
     {/* Mobile Menu */}
-    <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} absolute top-24 inset-x-0 border bg-slate-900 bg-opacity-35  rounded-lg z-10`} id="navbar-default">
+    <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} absolute top-24 inset-x-0  bg-slate-900 bg-opacity-35  rounded-lg z-10`} id="navbar-default">
   <ul className="font-medium flex flex-col p-4 bg-slate-900 bg-opacity-75  space-y-4 text-center">
     <li>
-      <a href="/" className="block py-2 px-3 bg-slate-900 bg-opacity-75 hover:bg-slate-950 rounded" aria-current="page">Home</a>
+      <a href="/" className="block py-2 px-3 text-gray-200  bg-slate-900 bg-opacity-75 hover:bg-slate-950 rounded" aria-current="page">Home</a>
     </li>
     <li>
       <a href="#coordinators" className="block bg-slate-900 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">Contact</a>
