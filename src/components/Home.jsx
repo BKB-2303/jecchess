@@ -78,10 +78,7 @@ const Home = () => {
       imageSrc: 'https://play-lh.googleusercontent.com/vfcgwewsTEz0t-aV119kMDNtYYOUOffUEWTUyOdFtir6upQMzg5JLzuyQRj_oJXHPXk', 
       text: 'Gloabal Reach' 
     },
-    { 
-      imageSrc: 'https://scontent.fmaa8-1.fna.fbcdn.net/v/t39.30808-6/293707119_413255744158710_5815958960218632157_n.png?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_ohc=XJsS47BjxU0AX8_Kl3a&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfCrhnLFt4e06aXdwC9zxd44oFu0x1PrCfMDdbyxD8zazg&oe=65F47EE5', 
-      text: 'Dento Miracles' 
-    },
+  
    
   ];
   
