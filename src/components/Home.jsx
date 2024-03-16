@@ -113,13 +113,13 @@ const Home = () => {
   return (
     <div className="relative bg-gradient-to-r from-blue-950 to-stone-950">
 
-      {/* <div
+      <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
         style={{ backgroundImage: `url(${ECLECTIC_EUPHORIA})` }}
-      ></div> */}
+      ></div> 
 
 
-<nav className="bg-white border-gray-200">
+<nav className="bg-rose-50 border-gray-200">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -213,7 +213,7 @@ const Home = () => {
   
 </header>
 
-      <div className="text-center  mx-auto max-w-screen-lg bg-slate-900 bg-opacity-60 p-6 rounded-lg shadow-lg">
+      <div className="text-center  mx-auto max-w-screen-xl bg-slate-900 bg-opacity-60 p-6 rounded-lg shadow-lg">
     <h1 className="mt-2 text-2xl text-gray-200">
         📍Venue 
         <a href="https://maps.app.goo.gl/NzuUe8pe8JpAtXAT7" target="_blank" rel="noopener noreferrer" className="inline-block">
@@ -222,13 +222,13 @@ const Home = () => {
     </h1>
 
     <a href="https://jecassam.ac.in/">
-  <h1 className="mt-4 text-lg text-green-300 ">Jorhat Engineering College</h1>
+  <h1 className="mt-4 text-lg text-white ">Jorhat Engineering College</h1>
 </a>
 
     <h1 className="mt-2 text-base text-gray-200">Garmur, Jorhat, Assam</h1>
 </div>
 
-      <div className="my-8 mx-auto max-w-screen-lg bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
         <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg  mb-2 text-gray-400">
@@ -315,9 +315,9 @@ const Home = () => {
         
       </div> */}
       
-      <div className="my-8 mx-auto max-w-screen-lg bg-opacity-70 bg-indigo-950 p-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-800 p-4">
   {/* Box 1 - Open Category */}
-  <div className="bg-slate-950 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+  <div className="bg-slate-900 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
     <h2 className="text-lg font-bold mb-2 text-green-200">
       Open Category
     </h2>
@@ -332,12 +332,12 @@ const Home = () => {
 </div>
 
     
-      <div className="my-8 mx-auto max-w-screen-lg bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 - Open Category */}
      
 
         {/* Box 2 - Under-9 */}
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-yellow-300">Under-9</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -345,7 +345,7 @@ const Home = () => {
         </div>
 
         {/* Box 3 - Under-13 */}
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-blue-300">Under-11</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -353,20 +353,20 @@ const Home = () => {
         </div>
 
         {/* Box 4 - Under-17 */}
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-13</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-15</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
       </div>
-      <div className="mt-8 bg-indigo-950 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
+      <div className="mt-8 bg-indigo-950 opacity-70 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
        
        <p className="text-gray-200 text-base">
        🏅🎓 Digital certificates will be awarded to participants of Knight's Gambit 2.0. 🏆📜
