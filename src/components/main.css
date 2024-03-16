@@ -1,0 +1,51 @@
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .slide-in {
+    animation: slideIn 5s ease-out infinite; 
+  }
+  .blur {
+    filter: blur(5px); 
+  }
+  
+  
+  .alice-carousel {
+    width: 100%;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border:solid rgb(45, 39, 207);
+    border-radius: 10px;
+  }
+
+
+@keyframes scaleContinuous {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-scale-continuous {
+  animation: scaleContinuous 2s infinite; 
+}
+
+.form-container {
+  max-height: 500px; 
+  overflow-y: auto;
+}
+
