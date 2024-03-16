@@ -164,6 +164,9 @@ const Home = () => {
         <li>
           <a href="#gallery" className="block py-2 px-3 text-white rounded hover:bg-slate-400">Gallery</a>
         </li>
+        <li>
+          <a href="/formore" className="block py-2 px-3 text-white rounded hover:bg-slate-400">For more</a>
+        </li>
       </ul>
     </div>
 
@@ -178,6 +181,9 @@ const Home = () => {
         </li>
         <li>
           <a href="#gallery" className="block py-2 px-3 text-white rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">Gallery</a>
+        </li>
+        <li>
+          <a href="/formore" className="block py-2 px-3 text-white rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">For More</a>
         </li>
       </ul>
     </div>

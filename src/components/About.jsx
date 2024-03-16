@@ -1,125 +1,93 @@
-// import React from 'react';
-// import ECLECTIC_EUPHORIA from "../assets/ECLECTIC EUPHORIA .png";
-// import KNIGHTS_GAMBIT from "../assets/KG1image1.jpg";
-
-// const Home = () => {
-//   const handleDownload = () => {
-//     // Create a temporary anchor element
-//     const anchor = document.createElement('a');
-//     anchor.href = ECLECTIC_EUPHORIA; // Set the image URL as the href
-//     anchor.download = 'eclectic_euphoria.png'; // Set the downloaded file name
-//     document.body.appendChild(anchor);
-//     anchor.click();
-//     document.body.removeChild(anchor); // Clean up
-//   };
-
-//   const handleShare = () => {
-//     if (navigator.share) {
-//       navigator.share({
-//         title: "Knight's Gambit 2.0",
-//         text: 'Check out this awesome image!',
-//         url: window.location.href
-//       }).then(() => {
-//         console.log('Shared successfully');
-//       }).catch((error) => {
-//         console.error('Error sharing:', error);
-//       });
-//     } else {
-//       console.log('Web Share API not supported');
-//     }
-//   };
-
-//   return (
-//     <div className="bg-gradient-to-r from-blue-950 to-black min-h-screen flex flex-col items-center justify-center text-white">
-//       <img src={KNIGHTS_GAMBIT} alt="Knight's Gambit 2.0" className="h-40 mb-2" />
-//       <h1 className="text-4xl mb-4">Home Page</h1>
-//       <img src={ECLECTIC_EUPHORIA} alt="ECLECTIC_EUPHORIA" className="h-40 mb-2" />
-//       <div className="flex justify-center">
-//         <button onClick={handleDownload} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4">
-//           Download Image
-//         </button>
-//         <button onClick={handleShare} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-//           Share
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default Home;
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link from React Router if you're using it
-import ECLECTIC_EUPHORIA from "../assets/ECLECTIC EUPHORIA .png";
-import KNIGHTS_GAMBIT from "../assets/KG1image1.jpg";
-import KNIGHTS_GAMBIT2 from "../assets/KG1image2.jpeg";
+import { Link } from 'react-router-dom'; // Import Link if you're using React Router
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
+import KnightGambit2 from "../assets/knightGambit2.png";
+import JEC from "../assets/JEC_logo.jpg";
+import B1 from '../assets/b1.jpeg';
 
-const Home = () => {
-  const handleDownload = (imageName) => {
-    // Create a temporary anchor element
-    const anchor = document.createElement('a');
-    anchor.href = imageName; // Set the image URL as the href
-    anchor.download = 'image.png'; // Set the downloaded file name
-    document.body.appendChild(anchor);
-    anchor.click();
-    document.body.removeChild(anchor); // Clean up
+const About = () => {
+
+  // Function to handle image download
+  const handleDownload = (url) => {
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'image.jpg';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
-  const handleShare = () => {
+  // Function to handle image share
+  const handleShare = (url) => {
     if (navigator.share) {
       navigator.share({
-        title: "Knight's Gambit 2.0",
-        text: 'Check out this awesome image!',
-        url: window.location.href
-      }).then(() => {
-        console.log('Shared successfully');
-      }).catch((error) => {
-        console.error('Error sharing:', error);
-      });
+        title: 'Share Image',
+        url: url,
+      })
+      .then(() => console.log('Shared successfully'))
+      .catch((error) => console.error('Share failed:', error));
     } else {
       console.log('Web Share API not supported');
     }
   };
 
-  const items = [
-    {
-      name: "Knight's Gambit 2.0 Poster",
-      imageAlt: "product image",
-      imageSrc: KNIGHTS_GAMBIT
-    },
-    {
-      name: "Knight's Gambit 2.0 Poster 2",
-      imageAlt: "product image 2",
-      imageSrc: KNIGHTS_GAMBIT2
-    }
-  ];
-
   return (
-    <div className="bg-gradient-to-r from-blue-950 to-black min-h-screen flex flex-col items-center justify-center text-white">
-      <img src={ECLECTIC_EUPHORIA} alt="Header" className="mb-4 max-h-60 object-cover" />
-      <Link to="/" className="text-white mb-4">Home</Link> {/* Link to navigate back to the home page */}
-      <div className="flex flex-wrap justify-center">
-        {items.map((item, index) => (
-          <div key={index} className="w-full sm:w-1/2 max-w-2xl bg-gradient-to-r from-indigo-900 to-black border border-indigo-200 rounded-lg shadow mb-8">
-            <img className="p-8 rounded-t-lg w-full h-auto sm:h-96" src={item.imageSrc} alt={item.imageAlt} />
-            <div className="px-5 pb-5">
-              <a href="#">
-                <h5 className="text-xl tracking-tight text-indigo-200">{item.name}</h5>
-              </a>
-          
-              <div className="flex mt-2 items-center justify-between">
-                <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" onClick={() => handleDownload(item.imageSrc)}>
-                  Download
-                </button>
-                <button className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center" onClick={handleShare}>
-                  Share
-                </button>
-              </div>
-            </div>
+    <div className='bg-gradient-to-r from-blue-950 to-black min-h-screen'>
+      <div className='bg-indigo-900 bg-opacity-10 p-4'></div>
+      <header className="flex flex-col items-center justify-center">
+        <img src={JEC} alt="Jorhat Engineering College Logo" className="h-16 border border-indigo-900 md:h-20 mt-4 mb-2" />
+        <div className="flex items-center mb-4">
+          <img src={KnightGambit2} alt="Knight's Gambit Logo" className="h-8 md:h-10 mr-2" />
+          <h1 className="text-lg md:text-2xl font-bold text-gray-200">Knight's Gambit 2.0</h1>
+        </div>
+        <Link to="/">
+  <button className="text-gray-200 font-bold hover:text-gray-400 text-sm mb-4 flex items-center">
+    Back to 
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 ml-1">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205 3 1m1.5.5-1.5-.5M6.75 7.364V3h-3v18m3-13.636 10.5-3.819" />
+    </svg>
+  </button>
+</Link>
+
+      </header>
+      <p className="text-center text-gray-200 mt-4 mb-4">"Jorhat Engineering College Presents: Knight's Gambit 2.0 - Where Minds Clash and Kings Reign!"</p>
+
+      {/* Grid of images */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 mx-auto max-w-screen-lg border border-indigo-950">
+        <div className="relative">
+          <img className="h-[300px] md:h-[400px] w-full rounded-lg" src={B1} alt="" />
+          <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 flex justify-between items-center p-2">
+            <button className="text-gray-200 font-bold text-sm mr-2" onClick={() => handleDownload(B1)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+</svg>
+</button>
+            <button className="text-gray-200 font-bold text-sm" onClick={() => handleShare(B1)}> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+</svg>
+</button>
           </div>
-        ))}
+        </div>
+        <div className="relative">
+          <img className="h-[300px] md:h-[400px] w-full rounded-lg" src={B1} alt="" />
+          <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 flex justify-between items-center p-2">
+            <button className="text-gray-200 font-bold text-sm mr-2" onClick={() => handleDownload(B1)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+</svg>
+</button>
+            <button className="text-gray-200 font-bold text-sm" onClick={() => handleShare(B1)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7.217 10.907a2.25 2.25 0 1 0 0 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186 9.566-5.314m-9.566 7.5 9.566 5.314m0 0a2.25 2.25 0 1 0 3.935 2.186 2.25 2.25 0 0 0-3.935-2.186Zm0-12.814a2.25 2.25 0 1 0 3.933-2.185 2.25 2.25 0 0 0-3.933 2.185Z" />
+</svg>
+</button>
+          </div>
+        </div>
+      
       </div>
+      <p className=" text-center text-gray-200 mt-4">Share the images with your friends and fellow chess enthusiasts to spread the excitement of Open Blitz Chess Tournament!</p>
+      <div className='p-4'></div>
+
     </div>
   );
-}
+};
 
-export default Home;
+export default About;
