@@ -111,7 +111,7 @@ const Home = () => {
  
   
   return (
-    <div className="relative bg-gradient-to-r from-blue-950 to-stone-950">
+    <div className="relative bg-gradient-to-r from-blue-950 to-stone-950/95  ">
 
       {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
@@ -123,6 +123,7 @@ const Home = () => {
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+      
       <img src={KnightGambit2} className="h-8" alt="Flowbite Logo" />
       <span className="self-center text-stone-900 text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
     </a>
@@ -195,12 +196,27 @@ const Home = () => {
 
 <div className="p-3 bg-slate-800 opacity-50 shadow-lg"></div>
 
-<header className="flex mt-4 flex-col items-center justify-center  ">
-      <img
+
+<header className="flex mt-4 flex-col items-center justify-center relative">
+  {/* Animation divs - Left side */}
+  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
+    <div className="w-8 h-8 bg-red-400 bg-opacity-40 rounded-md  mr-1"></div>
+    <div className="w-8 h-8 bg-white bg-opacity-40 animate-spin rounded-md  mr-1"></div>
+  </div>
+
+  {/* Your image */}
+  <img
     src={ECLECTIC_EUPHORIA}
     alt="ECLECTIC_EUPHORIA"
-    className="h-40  mb-2   transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
+    className="h-40 mb-2 transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
   />
+
+  {/* Animation divs - Right side */}
+  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center ">
+    <div className="w-8 h-8 bg-white animate-spin rounded-md bg-opacity-40 mr-1"></div>
+    <div className="w-8 h-8 bg-red-400 rounded-md bg-opacity-40 mr-1"></div>
+  </div>
+
 <div class="flex items-center">
   <h1 class="mt-2 text-2xl text-gray-200 inline-flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
