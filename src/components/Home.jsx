@@ -113,13 +113,13 @@ const Home = () => {
   return (
     <div className="relative bg-gradient-to-r from-blue-950 to-stone-950">
 
-      <div
+      {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
         style={{ backgroundImage: `url(${ECLECTIC_EUPHORIA})` }}
-      ></div> 
+      ></div> */}
 
 
-<nav className="bg-rose-50 border-gray-200">
+<nav className="bg-white ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -201,7 +201,30 @@ const Home = () => {
     alt="ECLECTIC_EUPHORIA"
     className="h-40  mb-2   transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
   />
-  <h1 className="mt-2 text-2xl text-gray-200 ">Presents</h1>
+<div class="flex items-center">
+  <h1 class="mt-2 text-2xl text-gray-200 inline-flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+    </svg>
+    Presents
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 ml-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
+    </svg>
+  </h1>
+</div>
+
   <div className="flex items-center mt-2">
     {/* Add your icon image here */}
     <img src={KnightGambit2} alt="Icon" className="h-8 w-8 mr-2 transform hover:scale-110 animate-scale" />
@@ -213,22 +236,31 @@ const Home = () => {
   
 </header>
 
-      <div className="text-center  mx-auto max-w-screen-xl bg-slate-900 bg-opacity-60 p-6 rounded-lg shadow-lg">
-    <h1 className="mt-2 text-2xl text-gray-200">
-        📍Venue 
-        <a href="https://maps.app.goo.gl/NzuUe8pe8JpAtXAT7" target="_blank" rel="noopener noreferrer" className="inline-block">
-            <img src={Map} alt="Map Icon" className="w-10 h-10 ml-1" />
-        </a> 👈🏻<span className="text-2xl text-red-400 animate-pulse">click here</span> 
-    </h1>
+      <div className="text-center  mx-auto max-w-screen-xl bg-stone-800 bg-opacity-20 p-6 rounded-lg shadow-lg">
+    
+      <div class="flex items-center justify-center">
+  <h1 class="mt-2 text-2xl text-gray-200 flex items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+      <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+    </svg>
+    Venue 
+  </h1>
+  <a href="https://maps.app.goo.gl/NzuUe8pe8JpAtXAT7" target="_blank" rel="noopener noreferrer" class="inline-block ml-1">
+    <img src={Map} alt="Map Icon" class="w-10 h-10" />
+  </a>
+  <span class="text-2xl text-rose-200 animate-pulse ml-1">click here</span> 
+</div>
+
 
     <a href="https://jecassam.ac.in/">
-  <h1 className="mt-4 text-lg text-white ">Jorhat Engineering College</h1>
+  <h1 className="mt-4 text-lg text-rose-50 ">Jorhat Engineering College</h1>
 </a>
 
     <h1 className="mt-2 text-base text-gray-200">Garmur, Jorhat, Assam</h1>
 </div>
 
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
         <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg  mb-2 text-gray-400">
@@ -315,9 +347,9 @@ const Home = () => {
         
       </div> */}
       
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-800 p-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-indigo-950 p-4">
   {/* Box 1 - Open Category */}
-  <div className="bg-slate-900 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+  <div className="bg-slate-950 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
     <h2 className="text-lg font-bold mb-2 text-green-200">
       Open Category
     </h2>
@@ -332,12 +364,12 @@ const Home = () => {
 </div>
 
     
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 - Open Category */}
      
 
         {/* Box 2 - Under-9 */}
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-yellow-300">Under-9</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -345,7 +377,7 @@ const Home = () => {
         </div>
 
         {/* Box 3 - Under-13 */}
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-blue-300">Under-11</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -353,20 +385,20 @@ const Home = () => {
         </div>
 
         {/* Box 4 - Under-17 */}
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-13</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-15</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
       </div>
-      <div className="mt-8 bg-indigo-950 opacity-70 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
+      <div className="mt-8 bg-indigo-950 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
        
        <p className="text-gray-200 text-base">
        🏅🎓 Digital certificates will be awarded to participants of Knight's Gambit 2.0. 🏆📜
