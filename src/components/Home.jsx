@@ -119,18 +119,18 @@ const Home = () => {
       ></div> */}
 
 
-<nav className="bg-blue-950 border-gray-200">
+<nav className="bg-stone-200 border-gray-200">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       <img src={KnightGambit2} className="h-8" alt="Flowbite Logo" />
-      <span className="self-center text-gray-200 text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
+      <span className="self-center text-stone-900 text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
     </a>
 
     {/* Mobile Menu Button */}
     <button
       onClick={handleMobileMenuToggle}
-      className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+      className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-stone-950 border border-stone-950 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
       aria-controls="navbar-default"
       aria-expanded={isMobileMenuOpen}
     >
@@ -174,16 +174,16 @@ const Home = () => {
     <div className=" md:flex md:items-center md:w-auto hidden" id="navbar-default">
       <ul className="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse">
         <li>
-          <a href="/" className="block py-2 px-3 text-white bg-slate-700 rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+          <a href="/" className="block py-2 px-3 text-stone-950  rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#coordinators" className="block py-2 px-3 text-white rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
+          <a href="#coordinators" className="block py-2 px-3 text-stone-950 rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
         </li>
         <li>
-          <a href="#gallery" className="block py-2 px-3 text-white rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">Gallery</a>
+          <a href="#gallery" className="block py-2 px-3 text-stone-950 rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">Gallery</a>
         </li>
         <li>
-          <a href="/formore" className="block py-2 px-3 text-white rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">For More</a>
+          <a href="/formore" className="block py-2 px-3 text-stone-950 rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">For More</a>
         </li>
       </ul>
     </div>
@@ -193,7 +193,7 @@ const Home = () => {
 
 
 
-<div className="p-4 bg-slate-900 opacity-50 shadow-lg"></div>
+<div className="p-3 bg-slate-800 opacity-50 shadow-lg"></div>
 
 <header className="flex mt-4 flex-col items-center justify-center  ">
       <img
@@ -231,12 +231,12 @@ const Home = () => {
       <div className="my-8 mx-auto max-w-screen-lg bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
         <div className="bg-slate-950 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
-          <h2 className="text-lg  mb-2 text-green-400">
+          <h2 className="text-lg  mb-2 text-gray-400">
             Open Blitz Chess Tournament
           </h2>
           <p className="text-gray-300 text-base">
             🏆 Prizes Worth{" "}
-            <span className="text-red-500 text-xl font-bold">
+            <span className="text-red-300 text-xl font-bold">
               Rs. 24,000/-
             </span>
           </p>
@@ -252,22 +252,22 @@ const Home = () => {
           </p>
           <p className="text-gray-200">
             Date:{" "}
-            <span className="text-green-300 ">23 March, 2024</span>
+            <span className="text-gray-400 ">23 March, 2024</span>
           </p>
           
           <p className="text-gray-200">
             Venue:{" "}
-            <span className="text-green-300  ">NB 207,Drawing hall</span>
+            <span className="text-gray-400  ">NB 207,Drawing hall</span>
           </p>
           <p className="text-gray-200">
             
-            <span className="text-green-300  ">Jorhat Engineering College</span>
+            <span className="text-gray-400  ">Jorhat Engineering College</span>
           </p>
         </div>
 
         {/* Box 2 */}
         <div className="bg-slate-950 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
-          <h2 className="text-lg mb-2  font-modern-antiqua text-green-300 ">
+          <h2 className="text-lg mb-2  font-modern-antiqua text-gray-400 ">
             🌟 Tournament Schedule 🌟
           </h2>
           <p className="text-gray-300">1st Round: 9:30AM</p>
