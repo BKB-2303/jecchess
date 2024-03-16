@@ -115,7 +115,7 @@ const Home = () => {
 
       {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
-        style={{ backgroundImage: `url(${Bg})` }}
+        style={{ backgroundImage: `url(${ECLECTIC_EUPHORIA})` }}
       ></div> */}
 
 
@@ -153,10 +153,10 @@ const Home = () => {
     </button>
 
     {/* Mobile Menu */}
-    <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} absolute  top-20 right-8  border border-gray-100 rounded-lg`} id="navbar-default">
+    <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} absolute  top-24 right-8  border border-gray-100 rounded-lg`} id="navbar-default">
       <ul className="font-medium flex flex-col p-4 space-y-4">
         <li>
-          <a href="/" className="block py-2 px-3 text-white bg-slate-700 rounded" aria-current="page">Home</a>
+          <a href="/" className="block py-2 px-3 text-white bg-indigo-900 rounded" aria-current="page">Home</a>
         </li>
         <li>
           <a href="#coordinators" className="block py-2 px-3 text-white rounded hover:bg-slate-400">Contact</a>
@@ -199,7 +199,7 @@ const Home = () => {
       <img
     src={ECLECTIC_EUPHORIA}
     alt="ECLECTIC_EUPHORIA"
-    className="h-40  mb-2  transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
+    className="h-40  mb-2   transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
   />
   <h1 className="mt-2 text-2xl text-gray-200 ">Presents</h1>
   <div className="flex items-center mt-2">
@@ -213,12 +213,12 @@ const Home = () => {
   
 </header>
 
-      <div className="text-center  mx-auto max-w-screen-lg bg-indigo-950 bg-opacity-50 p-6 rounded-lg shadow-lg">
+      <div className="text-center  mx-auto max-w-screen-lg bg-slate-900 bg-opacity-60 p-6 rounded-lg shadow-lg">
     <h1 className="mt-2 text-2xl text-gray-200">
         📍Venue 
         <a href="https://maps.app.goo.gl/NzuUe8pe8JpAtXAT7" target="_blank" rel="noopener noreferrer" className="inline-block">
             <img src={Map} alt="Map Icon" className="w-10 h-10 ml-1" />
-        </a> 👈🏻<span className="text-2xl text-red-500 animate-pulse">click here</span> 
+        </a> 👈🏻<span className="text-2xl text-red-400 animate-pulse">click here</span> 
     </h1>
 
     <a href="https://jecassam.ac.in/">
@@ -230,13 +230,13 @@ const Home = () => {
 
       <div className="my-8 mx-auto max-w-screen-lg bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
-        <div className="bg-slate-950 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg  mb-2 text-gray-400">
             Open Blitz Chess Tournament
           </h2>
           <p className="text-gray-300 text-base">
             🏆 Prizes Worth{" "}
-            <span className="text-red-300 text-xl font-bold">
+            <span className="text-white text-xl font-bold">
               Rs. 24,000/-
             </span>
           </p>
@@ -248,7 +248,7 @@ const Home = () => {
 
           <p className="text-gray-200 mt-2">
             Last Date of Registration:{" "}
-            <span className="text-green-300  font-bold">22 March, 2024</span>
+            <span className="text-stone-300  font-bold">22 March, 2024</span>
           </p>
           <p className="text-gray-200">
             Date:{" "}
@@ -266,7 +266,7 @@ const Home = () => {
         </div>
 
         {/* Box 2 */}
-        <div className="bg-slate-950 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg mb-2  font-modern-antiqua text-gray-400 ">
             🌟 Tournament Schedule 🌟
           </h2>
@@ -283,7 +283,7 @@ const Home = () => {
       <AliceCarousel {...carouselSettings}>
     {carouselItems.map((item, index) => (
       <div key={index}>
-        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image mx-auto h-32 w-36" />
+        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image  mx-auto h-32 w-36" />
         <p className="text-center mt-2 text-gray-200">{item.text}</p>
       </div>
     ))}

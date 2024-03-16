@@ -23,7 +23,7 @@ function App() {
         <Route
           path="/"
           element={isZooming ? (
-            <div className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-gradient-to-r from-blue-950 to-black backdrop-blur">
+            <div className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-gradient-to-r from-blue-950 to-stone-950 backdrop-blur">
               <img
                 src={KnightGambit2} 
                 alt="Zooming Image"
