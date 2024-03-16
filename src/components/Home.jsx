@@ -193,7 +193,7 @@ const Home = () => {
 
 
 
-<div className="p-4 bg-slate-900 shadow-lg"></div>
+<div className="p-4 bg-slate-900 opacity-50 shadow-lg"></div>
 
 <header className="flex mt-4 flex-col items-center justify-center  ">
       <img
@@ -210,16 +210,9 @@ const Home = () => {
   <h1 className="mt-2 text-xl text-gray-200">2.0</h1>
 
 
-  <h1 className="mt-2 text-xl text-gray-400 mb-4">sponsored by</h1>
+  
 </header>
-<AliceCarousel {...carouselSettings}>
-    {carouselItems.map((item, index) => (
-      <div key={index}>
-        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image mx-auto h-32 w-36" />
-        <p className="text-center mt-2 text-gray-200">{item.text}</p>
-      </div>
-    ))}
-  </AliceCarousel>
+
       <div className="text-center  mx-auto max-w-screen-lg bg-indigo-950 bg-opacity-50 p-6 rounded-lg shadow-lg">
     <h1 className="mt-2 text-2xl text-gray-200">
         📍Venue 
@@ -286,7 +279,15 @@ const Home = () => {
           <p className="text-gray-300">*Number of rounds cited above may be more or less depending upon number of registered participants</p>
         </div>
       </div>
-
+      <h1 className="mt-2 text-xl text-center text-gray-400 mb-4">Knight's Gambit 2.0 Sponsored by</h1>
+      <AliceCarousel {...carouselSettings}>
+    {carouselItems.map((item, index) => (
+      <div key={index}>
+        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image mx-auto h-32 w-36" />
+        <p className="text-center mt-2 text-gray-200">{item.text}</p>
+      </div>
+    ))}
+  </AliceCarousel>
       <div className="mt-8 mx-auto max-w-screen-lg p-4 rounded-md shadow-md">
     <p className="text-gray-200 text-base">
         "Join 'Knights Gambit 2.0' at Phoenix 2024. It's not just a game; it's a battle of wits and strategy. Let's find the true chess champion!"
