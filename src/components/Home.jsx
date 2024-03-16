@@ -111,7 +111,7 @@ const Home = () => {
  
   
   return (
-    <div className="relative bg-gradient-to-r from-blue-950 to-black">
+    <div className="relative bg-gradient-to-r from-blue-950 to-stone-950">
 
       {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
@@ -119,7 +119,7 @@ const Home = () => {
       ></div> */}
 
 
-<nav className="bg-indigo-950 border-gray-200">
+<nav className="bg-blue-950 border-gray-200">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
@@ -222,7 +222,7 @@ const Home = () => {
     </h1>
 
     <a href="https://jecassam.ac.in/">
-  <h1 className="mt-4 text-lg text-pink-300 font-bold">Jorhat Engineering College</h1>
+  <h1 className="mt-4 text-lg text-green-300 ">Jorhat Engineering College</h1>
 </a>
 
     <h1 className="mt-2 text-base text-gray-200">Garmur, Jorhat, Assam</h1>
@@ -231,12 +231,12 @@ const Home = () => {
       <div className="my-8 mx-auto max-w-screen-lg bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
         <div className="bg-slate-950 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
-          <h2 className="text-lg font-bold mb-2 text-pink-400">
+          <h2 className="text-lg  mb-2 text-green-400">
             Open Blitz Chess Tournament
           </h2>
           <p className="text-gray-300 text-base">
             🏆 Prizes Worth{" "}
-            <span className="text-pink-300 text-xl font-bold">
+            <span className="text-red-500 text-xl font-bold">
               Rs. 24,000/-
             </span>
           </p>
@@ -252,22 +252,22 @@ const Home = () => {
           </p>
           <p className="text-gray-200">
             Date:{" "}
-            <span className="text-green-300  font-bold">23 March, 2024</span>
+            <span className="text-green-300 ">23 March, 2024</span>
           </p>
           
           <p className="text-gray-200">
             Venue:{" "}
-            <span className="text-green-300  font-bold">NB 207,Drawing hall</span>
+            <span className="text-green-300  ">NB 207,Drawing hall</span>
           </p>
           <p className="text-gray-200">
             
-            <span className="text-green-300  font-bold">Jorhat Engineering College</span>
+            <span className="text-green-300  ">Jorhat Engineering College</span>
           </p>
         </div>
 
         {/* Box 2 */}
         <div className="bg-slate-950 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
-          <h2 className="text-lg font-bold mb-2  font-modern-antiqua text-green-300 ">
+          <h2 className="text-lg mb-2  font-modern-antiqua text-green-300 ">
             🌟 Tournament Schedule 🌟
           </h2>
           <p className="text-gray-300">1st Round: 9:30AM</p>
