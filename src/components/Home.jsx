@@ -111,7 +111,7 @@ const Home = () => {
  
   
   return (
-    <div className="relative bg-gradient-to-r from-slate-950 to-stone-950/95  ">
+    <div className="relative bg-gradient-to-r from-slate-800 to-stone-950  ">
 
       {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
@@ -254,7 +254,7 @@ const Home = () => {
   
 </header>
 
-      <div className="text-center  mx-auto max-w-screen-xl bg-stone-800 bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div className="text-center  mx-auto max-w-screen-xl bg-slate-800/95 bg-opacity-20 p-6 rounded-lg shadow-lg">
     
       <div class="flex items-center justify-center">
   <h1 class="mt-2 text-2xl text-gray-200 flex items-center">
@@ -278,7 +278,7 @@ const Home = () => {
     <h1 className="mt-2 text-base text-gray-200">Garmur, Jorhat, Assam</h1>
 </div>
 
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-900/85 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
         <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-base  mb-2 text-gray-400">
@@ -365,9 +365,9 @@ const Home = () => {
         
       </div> */}
       
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-700 p-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-900/95 p-4">
   {/* Box 1 - Open Category */}
-  <div className="bg-slate-950 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+  <div className="bg-slate-900 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
     <h2 className="text-lg font-bold mb-2 text-green-200">
       Open Category
     </h2>
@@ -382,12 +382,12 @@ const Home = () => {
 </div>
 
     
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-900/85 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 - Open Category */}
      
 
         {/* Box 2 - Under-9 */}
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-yellow-300">Under-9</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -395,7 +395,7 @@ const Home = () => {
         </div>
 
         {/* Box 3 - Under-13 */}
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-blue-300">Under-11</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -403,13 +403,13 @@ const Home = () => {
         </div>
 
         {/* Box 4 - Under-17 */}
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-13</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
-        <div className="bg-slate-950 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-15</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
