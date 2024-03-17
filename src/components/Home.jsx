@@ -125,7 +125,7 @@ const Home = () => {
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       
       <img src={KnightGambit2} className="h-8" alt="Flowbite Logo" />
-      <span className="self-center text-stone-900 text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
+      <span className="self-center text-stone-900  text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
     </a>
 
     {/* Mobile Menu Button */}
