@@ -111,7 +111,7 @@ const Home = () => {
  
   
   return (
-    <div className="relative bg-gradient-to-r from-blue-950 to-stone-950/95  ">
+    <div className="relative bg-gradient-to-r from-stone-950/95 to-stone-950/95  ">
 
       {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
