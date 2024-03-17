@@ -111,7 +111,7 @@ const Home = () => {
  
   
   return (
-    <div className="relative bg-gradient-to-r from-stone-950/95 to-stone-950/95  ">
+    <div className="relative bg-gradient-to-r from-slate-950 to-stone-950/95  ">
 
       {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
@@ -155,18 +155,18 @@ const Home = () => {
 
     {/* Mobile Menu */}
     <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} absolute top-24 inset-x-0  bg-slate-900 bg-opacity-35  rounded-lg z-10`} id="navbar-default">
-  <ul className="font-medium flex flex-col p-4 bg-slate-900 bg-opacity-75  space-y-4 text-center">
+  <ul className="font-medium flex flex-col p-4 bg-slate-800 bg-opacity-75  space-y-4 text-center">
     <li>
-      <a href="/" className="block py-2 px-3 text-gray-200  bg-slate-900 bg-opacity-75 hover:bg-slate-950 rounded" aria-current="page">Home</a>
+      <a href="/" className="block py-2 px-3 text-gray-200  bg-slate-800 bg-opacity-75 hover:bg-slate-950 rounded" aria-current="page">Home</a>
     </li>
     <li>
-      <a href="#coordinators" className="block bg-slate-900 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">Contact</a>
+      <a href="#coordinators" className="block bg-slate-800 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">Contact</a>
     </li>
     <li>
-      <a href="#gallery" className="block bg-slate-900 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">Gallery</a>
+      <a href="#gallery" className="block bg-slate-800 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">Gallery</a>
     </li>
     <li>
-      <a href="/formore" className="block bg-slate-900 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">For more</a>
+      <a href="/formore" className="block bg-slate-800 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">For more</a>
     </li>
   </ul>
 </div>
@@ -195,14 +195,15 @@ const Home = () => {
 
 
 
-<div className="p-3 bg-slate-800 opacity-50 shadow-lg"></div>
+<div className="p-3 bg-slate-800 opacity-20 shadow-lg"></div>
 
 
 <header className="flex mt-4 flex-col items-center justify-center relative">
   {/* Animation divs - Left side */}
   <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
     <div className="w-8 h-8 bg-red-400 bg-opacity-40 rounded-md  mr-1"></div>
-    <div className="w-8 h-8 bg-white bg-opacity-40 animate-spin rounded-md  mr-1"></div>
+    <div className="w-8 h-8 bg-white bg-opacity-40 animate-bounce rounded-md  mr-1"></div>
+    
   </div>
 
   {/* Your image */}
@@ -214,7 +215,7 @@ const Home = () => {
 
   {/* Animation divs - Right side */}
   <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center ">
-    <div className="w-8 h-8 bg-white animate-spin rounded-md bg-opacity-40 mr-1"></div>
+    <div className="w-8 h-8 bg-white animate-bounce rounded-md bg-opacity-40 mr-1"></div>
     <div className="w-8 h-8 bg-red-400 rounded-md bg-opacity-40 mr-1"></div>
   </div>
 
@@ -277,10 +278,10 @@ const Home = () => {
     <h1 className="mt-2 text-base text-gray-200">Garmur, Jorhat, Assam</h1>
 </div>
 
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
-        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
-          <h2 className="text-lg  mb-2 text-gray-400">
+        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+          <h2 className="text-base  mb-2 text-gray-400">
             Open Blitz Chess Tournament
           </h2>
           <p className="text-gray-300 text-base">
@@ -315,8 +316,8 @@ const Home = () => {
         </div>
 
         {/* Box 2 */}
-        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-950 transition duration-300 ease-in-out transform hover:scale-105">
-          <h2 className="text-lg mb-2  font-modern-antiqua text-gray-400 ">
+        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+          <h2 className="text-base mb-2  font-modern-antiqua text-gray-400 ">
             🌟 Tournament Schedule 🌟
           </h2>
           <p className="text-gray-300">1st Round: 9:30AM</p>
@@ -364,7 +365,7 @@ const Home = () => {
         
       </div> */}
       
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-indigo-950 p-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-700 p-4">
   {/* Box 1 - Open Category */}
   <div className="bg-slate-950 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
     <h2 className="text-lg font-bold mb-2 text-green-200">
@@ -381,7 +382,7 @@ const Home = () => {
 </div>
 
     
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-indigo-950 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 - Open Category */}
      
 
@@ -415,7 +416,7 @@ const Home = () => {
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
       </div>
-      <div className="mt-8 bg-indigo-950 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
+      <div className="mt-8 bg-slate-800 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
        
        <p className="text-gray-200 text-base">
        🏅🎓 Digital certificates will be awarded to participants of Knight's Gambit 2.0. 🏆📜

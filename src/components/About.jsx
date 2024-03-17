@@ -33,7 +33,7 @@ const About = () => {
   };
 
   return (
-    <div className='bg-gradient-to-r from-blue-950 to-stone-950 min-h-screen'>
+    <div className='bg-gradient-to-r  from-slate-950 to-stone-950/95 min-h-screen'>
       <div className='bg-indigo-900 bg-opacity-10 p-4'></div>
       <header className="flex flex-col items-center justify-center">
         <img src={JEC} alt="Jorhat Engineering College Logo" className="h-16 border border-indigo-900 md:h-20 mt-4 mb-2" />
