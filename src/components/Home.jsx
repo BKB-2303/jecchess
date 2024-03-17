@@ -75,11 +75,26 @@ const Home = () => {
   
   const carouselItems = [
     { 
+      imageSrc: 'https://hotelprismjorhat.com/wp-content/uploads/2023/09/cropped-WhatsApp-Image-2023-09-16-at-11.45.55.jpeg', 
+      text: 'Hotel Prism Jorhat' 
+    },
+    { 
       imageSrc: 'https://play-lh.googleusercontent.com/vfcgwewsTEz0t-aV119kMDNtYYOUOffUEWTUyOdFtir6upQMzg5JLzuyQRj_oJXHPXk', 
       text: 'Gloabal Reach' 
     },
-  
    
+    { 
+      imageSrc: 'https://b2h9h9q9.rocketcdn.me/wp-content/uploads/2020/11/Lakme-Beauty-Parlour-Franchise-Logo.png', 
+      text: 'Lakme' 
+    },
+    { 
+      imageSrc: 'https://scontent.fmaa8-1.fna.fbcdn.net/v/t39.30808-1/320058332_901872547486390_571986540224158317_n.jpg?stp=dst-jpg_p320x320&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=I9DEdTWYJzEAX-MAnPM&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfCZYADZG7NpXfi0KRG9tcelXrdH_4ArTfBh2KQztBJvbA&oe=65FCC3FF', 
+      text: 'Baishya Barbershop Jorhat ' 
+    },
+    { 
+      imageSrc: 'https://scontent.fmaa8-1.fna.fbcdn.net/v/t39.30808-6/341015892_3547001635624478_3670067144127997495_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YvPAKtxK2OoAX9Y5Alu&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfCMdpLAmZ6lOPbaBdht1w73TXWH6aZcIDOJ3VP96EM3Sg&oe=65FC8C5B', 
+      text: 'Eco Service' 
+    },
   ];
   
   const carouselSettings = {
@@ -124,7 +139,7 @@ const Home = () => {
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       
-      <img src={KnightGambit2} className="h-8" alt="Flowbite Logo" />
+      <img src={KnightGambit2} className="h-8" alt="KnightGambit2" />
       <span className="self-center text-stone-900  text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
     </a>
 
@@ -257,14 +272,16 @@ const Home = () => {
       <div className="text-center  mx-auto max-w-screen-xl bg-slate-800/95 bg-opacity-20 p-6 rounded-lg shadow-lg">
     
       <div class="flex items-center justify-center">
+  <a href="https://www.google.com/maps/place/26%C2%B044'47.2%22N+94%C2%B014'53.9%22E/@26.7464416,94.2457273,17z/data=!3m1!4b1!4m4!3m3!8m2!3d26.7464416!4d94.2483022?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" class="inline-block ml-1">
+        
   <h1 class="mt-2 text-2xl text-gray-200 flex items-center">
+    
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
       <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
       <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
     </svg>
     Venue 
   </h1>
-  <a href="https://maps.app.goo.gl/NzuUe8pe8JpAtXAT7" target="_blank" rel="noopener noreferrer" class="inline-block ml-1">
     <img src={Map} alt="Map Icon" class="w-10 h-10" />
   </a>
   <span class="text-2xl text-rose-200 animate-pulse ml-1">click here</span> 
@@ -333,7 +350,7 @@ const Home = () => {
       <AliceCarousel {...carouselSettings}>
     {carouselItems.map((item, index) => (
       <div key={index}>
-        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image  mx-auto h-32 w-36" />
+        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image   mx-auto h-32 w-36" />
         <p className="text-center mt-2 text-gray-200">{item.text}</p>
       </div>
     ))}
@@ -374,9 +391,10 @@ const Home = () => {
     <p className="text-sm text-gray-300">1st prize: Rs 5000 + certificate</p>
     <p className="text-sm text-gray-300">2nd prize: Rs 4000 + certificate</p>
     <p className="text-sm text-gray-300">3rd prize: Rs 3000 + certificate</p>
-    <p className="text-sm text-gray-300">4th prize: Rs 2000 + certificate</p>
-    <p className="text-sm text-gray-300 sm:text-base">5th - 7th prize: Rs 1500 + certificate</p>
-    <p className="text-sm text-gray-300 sm:text-base">8th - 10th prize: Rs 1000 + certificate</p>
+    <p className="text-sm text-gray-300">4th prize: Rs 2500 + certificate</p>
+    <p className="text-sm text-gray-300">5th prize: Rs 2000 + certificate</p>
+  
+    <p className="text-sm text-gray-300 sm:text-base">6th - 10th prize: Rs 1200 + certificate</p>
     <p className="text-sm text-gray-300 sm:text-base">Best JECIAN: Rs 1500 + certificate</p>
   </div>
 </div>

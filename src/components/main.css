@@ -23,7 +23,7 @@
   .carousel-image {
     width: 100%;
     height: auto;
-    border:solid rgb(45, 39, 207);
+    border:solid 4px rgb(34, 33, 57);
     border-radius: 10px;
   }
 
