@@ -134,14 +134,14 @@ const Home = () => {
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
         style={{ backgroundImage: `url(${ECLECTIC_EUPHORIA})` }}
       ></div> */}
-<div className="relative bg-cover bg-center bg-opacity-50  " style={{ backgroundImage: `url(${BKBbg1})` }}>
-<nav className="bg-stone-900  bg-opacity-70 ">
+<div className="relative bg-cover bg-center bg-opacity-50 md:bg-cover md:bg-center md:bg-opacity-50" style={{ backgroundImage: `url(${BKBbg1})` }}>
+<nav className="bg-stone-900  font-mono bg-opacity-70 ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       
       <img src={KnightGambit2} className="h-8" alt="KnightGambit2" />
-      <span className="self-center text-gray-200  text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
+      <span className="self-center text-gray-200  text-sm font-semibold whitespace-nowrap font-mono">Knight's Gambit 2.0</span>
     </a>
 
     {/* Mobile Menu Button */}
@@ -217,17 +217,25 @@ const Home = () => {
 <header className="flex mt-4 flex-col items-center justify-center relative">
  
 
-  {/* Your image */}
-  <img
+
+  {/* <img
     src={ECLECTIC_EUPHORIA}
     alt="ECLECTIC_EUPHORIA"
     className="h-40 mb-2 transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
-  />
+  /> */}
+  <div className="flex items-center mb-2">
+    <img
+      src={ECLECTIC_EUPHORIA}
+      alt="ECLECTIC_EUPHORIA"
+      className="h-40 mr-2 transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
+    />
+    <h1 className="text-xl font-mono text-gray-200">Phoenix 2024</h1>
+  </div>
 
 
 
 <div class="flex items-center">
-  <h1 class="mt-2 text-2xl text-gray-200 inline-flex items-center">
+  <h1 class="mt-2 text-2xl font-mono text-gray-200 inline-flex items-center">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-1">
       <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
     </svg>
@@ -253,9 +261,9 @@ const Home = () => {
   <div className="flex items-center mt-2">
     {/* Add your icon image here */}
     <img src={KnightGambit2} alt="Icon" className="h-8 w-8 mr-2 transform hover:scale-110 animate-scale" />
-    <h1 className="text-2xl text-gray-200 transform hover:scale-110 animate-scale">Knight's Gambit</h1>
+    <h1 className="text-2xl text-gray-200 font-mono transform hover:scale-110 animate-scale">Knight's Gambit</h1>
   </div>
-  <h1 className="mt-2 text-xl text-gray-200">2.0</h1>
+  <h1 className="mt-2 text-xl font-mono text-gray-200">2.0</h1>
 
 
   
