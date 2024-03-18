@@ -12,7 +12,7 @@ import KG1image3 from '../assets/KG1image3.jpeg'
 import KG1image4 from '../assets/KG1image4.jpeg'
 import KG1image5 from '../assets/KG1image5.jpeg'
 import KG1image6 from '../assets/KG1image6.jpeg'
-
+import Bg from '../assets/Bg.png'
 
 
 
@@ -132,8 +132,7 @@ const Home = () => {
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
         style={{ backgroundImage: `url(${ECLECTIC_EUPHORIA})` }}
       ></div> */}
-
-
+<div className="relative bg-cover bg-center bg-opacity-50  " style={{ backgroundImage: `url(${Bg})` }}>
 <nav className="bg-white ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
@@ -210,16 +209,11 @@ const Home = () => {
 
 
 
-<div className="p-3 bg-slate-800 opacity-20 shadow-lg"></div>
+
 
 
 <header className="flex mt-4 flex-col items-center justify-center relative">
-  {/* Animation divs - Left side */}
-  <div className="absolute left-0 top-1/2 transform -translate-y-1/2 flex items-center">
-    <div className="w-8 h-8 bg-red-400 bg-opacity-40 rounded-md  mr-1"></div>
-    <div className="w-8 h-8 bg-white bg-opacity-40 animate-bounce rounded-md  mr-1"></div>
-    
-  </div>
+ 
 
   {/* Your image */}
   <img
@@ -228,11 +222,7 @@ const Home = () => {
     className="h-40 mb-2 transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
   />
 
-  {/* Animation divs - Right side */}
-  <div className="absolute right-0 top-1/2 transform -translate-y-1/2 flex items-center ">
-    <div className="w-8 h-8 bg-white animate-bounce rounded-md bg-opacity-40 mr-1"></div>
-    <div className="w-8 h-8 bg-red-400 rounded-md bg-opacity-40 mr-1"></div>
-  </div>
+
 
 <div class="flex items-center">
   <h1 class="mt-2 text-2xl text-gray-200 inline-flex items-center">
@@ -269,7 +259,7 @@ const Home = () => {
   
 </header>
 
-      <div className="text-center  mx-auto max-w-screen-xl bg-slate-800/95 bg-opacity-20 p-6 rounded-lg shadow-lg">
+      <div className="text-center  mx-auto max-w-screen-xl p-6 rounded-lg shadow-lg">
     
       <div class="flex items-center justify-center">
   <a href="https://www.google.com/maps/place/26%C2%B044'47.2%22N+94%C2%B014'53.9%22E/@26.7464416,94.2457273,17z/data=!3m1!4b1!4m4!3m3!8m2!3d26.7464416!4d94.2483022?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" class="inline-block ml-1">
@@ -346,6 +336,8 @@ const Home = () => {
           <p className="text-gray-300">*Number of rounds cited above may be more or less depending upon number of registered participants</p>
         </div>
       </div>
+      </div>
+      <div></div>
       <h1 className="mt-2 text-xl text-center text-gray-400 mb-4">Knight's Gambit 2.0 Sponsored by</h1>
       <AliceCarousel {...carouselSettings}>
     {carouselItems.map((item, index) => (
