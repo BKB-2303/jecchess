@@ -12,7 +12,9 @@ import KG1image3 from '../assets/KG1image3.jpeg'
 import KG1image4 from '../assets/KG1image4.jpeg'
 import KG1image5 from '../assets/KG1image5.jpeg'
 import KG1image6 from '../assets/KG1image6.jpeg'
-import Bg from '../assets/Bg.png'
+import BKBbg1 from '../assets/BKB1Bg.png'
+import BKBbg2 from '../assets/BKB2Bg.png'
+
 
 
 
@@ -126,13 +128,13 @@ const Home = () => {
  
   
   return (
-    <div className="relative bg-gradient-to-r from-slate-800 to-stone-950  ">
+    <div className="relative bg-gradient-to-r from-stone-900 to-stone-950  ">
 
       {/* <div
         className="absolute inset-0 z-[-1] filter blur-sm bg-cover bg-center"
         style={{ backgroundImage: `url(${ECLECTIC_EUPHORIA})` }}
       ></div> */}
-<div className="relative bg-cover bg-center bg-opacity-50  " style={{ backgroundImage: `url(${Bg})` }}>
+<div className="relative bg-cover bg-center bg-opacity-50  " style={{ backgroundImage: `url(${BKBbg1})` }}>
 <nav className="bg-white ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
@@ -168,19 +170,19 @@ const Home = () => {
     </button>
 
     {/* Mobile Menu */}
-    <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} absolute top-24 inset-x-0  bg-slate-900 bg-opacity-35  rounded-lg z-10`} id="navbar-default">
-  <ul className="font-medium flex flex-col p-4 bg-slate-800 bg-opacity-75  space-y-4 text-center">
+    <div className={`md:hidden ${isMobileMenuOpen ? "block" : "hidden"} absolute top-24 inset-x-0  bg-gray-800 bg-opacity-35  rounded-lg z-10`} id="navbar-default">
+  <ul className="font-medium flex flex-col p-4 bg-stone-800 bg-opacity-75  space-y-4 text-center">
     <li>
-      <a href="/" className="block py-2 px-3 text-gray-200  bg-slate-800 bg-opacity-75 hover:bg-slate-950 rounded" aria-current="page">Home</a>
+      <a href="/" className="block py-2 px-3 text-gray-200  hover:text-gray-400 bg-opacity-75  rounded" aria-current="page">Home</a>
     </li>
     <li>
-      <a href="#coordinators" className="block bg-slate-800 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">Contact</a>
+      <a href="#coordinators" className="block hover:text-gray-400 bg-opacity-75 py-2 px-3 text-gray-200 rounded">Contact</a>
     </li>
     <li>
-      <a href="#gallery" className="block bg-slate-800 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">Gallery</a>
+      <a href="#gallery" className="block hover:text-gray-400 bg-opacity-75 py-2 px-3 text-gray-200 rounded">Gallery</a>
     </li>
     <li>
-      <a href="/formore" className="block bg-slate-800 bg-opacity-75 py-2 px-3 text-gray-200 rounded hover:bg-slate-950">For more</a>
+      <a href="/formore" className="block hover:text-gray-400  bg-opacity-75 py-2 px-3 text-gray-200 rounded ">For more</a>
     </li>
   </ul>
 </div>
@@ -285,9 +287,9 @@ const Home = () => {
     <h1 className="mt-2 text-base text-gray-200">Garmur, Jorhat, Assam</h1>
 </div>
 
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-900/85 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-800 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 */}
-        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-stone-800 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-stone-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-base  mb-2 text-gray-400">
             Open Blitz Chess Tournament
           </h2>
@@ -323,7 +325,7 @@ const Home = () => {
         </div>
 
         {/* Box 2 */}
-        <div className="bg-slate-900 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-stone-800 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-stone-900 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-base mb-2  font-modern-antiqua text-gray-400 ">
             🌟 Tournament Schedule 🌟
           </h2>
@@ -352,7 +354,7 @@ const Home = () => {
         "Join 'Knights Gambit 2.0' at Phoenix 2024. It's not just a game; it's a battle of wits and strategy. Let's find the true chess champion!"
     </p>
     
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoT2kAyfiGD4hDmRiYkEBFTUKg1DrCUbO4fUsVp43_maYrtQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" className="bg-indigo-500 hover:bg-indigo-800 text-white px-4 py-3 rounded-md mt-4 inline-block">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdoT2kAyfiGD4hDmRiYkEBFTUKg1DrCUbO4fUsVp43_maYrtQ/viewform?usp=sf_link" target="_blank" rel="noopener noreferrer" className="bg-green-600 hover:bg-green-800 text-white px-4 py-3 rounded-md mt-4 inline-block">
         Register Now
     </a>
 </div>
@@ -373,10 +375,10 @@ const Home = () => {
         </button> 
         
       </div> */}
-      
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-900/95 p-4">
+      <div className="relative bg-cover bg-center bg-opacity-50  " style={{ backgroundImage: `url(${BKBbg2})` }}>
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 p-4">
   {/* Box 1 - Open Category */}
-  <div className="bg-slate-900 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+  <div className="bg-stone-900 bg-opacity-70 p-4 rounded-md shadow-md hover:bg-stone-800 transition duration-300 ease-in-out transform hover:scale-105">
     <h2 className="text-lg font-bold mb-2 text-green-200">
       Open Category
     </h2>
@@ -392,12 +394,12 @@ const Home = () => {
 </div>
 
     
-      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-slate-900/85 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 bg-stone-900 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4">
         {/* Box 1 - Open Category */}
      
 
         {/* Box 2 - Under-9 */}
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-stone-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-stone-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-yellow-300">Under-9</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -405,7 +407,7 @@ const Home = () => {
         </div>
 
         {/* Box 3 - Under-13 */}
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-stone-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-stone-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-blue-300">Under-11</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
@@ -413,20 +415,20 @@ const Home = () => {
         </div>
 
         {/* Box 4 - Under-17 */}
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-stone-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-stone-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-13</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
-        <div className="bg-slate-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-slate-800 transition duration-300 ease-in-out transform hover:scale-105">
+        <div className="bg-stone-900 p-4 flex bg-opacity-70 flex-col rounded-md shadow-md hover:bg-stone-800 transition duration-300 ease-in-out transform hover:scale-105">
           <h2 className="text-lg font-bold mb-2 text-purple-300">Under-15</h2>
           <p className="text-gray-300">1st prize: Trophy + certificate</p>
           <p className="text-gray-300">2nd prize: Trophy + certificate</p>
           <p className="text-gray-300">3rd prize: Trophy + certificate</p>
         </div>
       </div>
-      <div className="mt-8 bg-slate-800 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
+      <div className="mt-8 bg-stone-900 mx-auto max-w-screen-lg p-4 rounded-md shadow-lg">
        
        <p className="text-gray-200 text-base">
        🏅🎓 Digital certificates will be awarded to participants of Knight's Gambit 2.0. 🏆📜
@@ -463,6 +465,7 @@ const Home = () => {
           </li>
         </ul>
       </div>
+      </div>
       <div className="mt-8 mx-auto max-w-screen-lg p-4 rounded-md shadow-md flex flex-col sm:flex-row items-center justify-between">
   {/* QR Code Image */}
   <div className="mb-4 sm:mb-0 relative">
@@ -480,15 +483,7 @@ const Home = () => {
     <p className="text-sm">JECIAN's get <span className="text-lg text-red-500 animate-pulse">50%</span> off - Now only Rs 200!</p>
   </div>
 
-  {/* Payment Details */}
-  {/* <div className="text-gray-200 text-lg mt-4 sm:mt-0 sm:ml-4">
-    <h2 className="text-xl font-bold mb-2 hidden sm:block">
-      Payment Details
-    </h2>
-    <p>UpiId: jyotisankarborpatra04@oksbi</p>
-    <p>UpiId: 7577830278@paytm</p>
-  </div> */}
-   {/* Payment Details */}
+
    <div className="text-gray-200 text-lg mt-4 sm:mt-0 sm:ml-4">
         <h2 className="text-xl font-bold mb-2 hidden sm:block">
           Payment Details
@@ -499,7 +494,7 @@ const Home = () => {
         <p>
           UpiId:{' '}
           <span
-            className="text-indigo-500 cursor-pointer"
+            className="text-green-600 cursor-pointer"
             onClick={() => handleCopy('jyotisankarborpatra04@oksbi')}
           >
             jyotisankarborpatra04@oksbi
@@ -508,7 +503,7 @@ const Home = () => {
         <p>
           UpiId:{' '}
           <span
-            className="text-indigo-500 cursor-pointer"
+            className="text-green-600 cursor-pointer"
             onClick={() => handleCopy('7577830278@paytm')}
           >
             7577830278@paytm
@@ -531,54 +526,54 @@ const Home = () => {
   ))}
 </AliceCarousel>
 
-<footer id="coordinators" className="mt-8 mx-auto max-w-screen-lg bg-slate-800 p-4 rounded-md shadow-md">
+<footer id="coordinators" className="mt-8 mx-auto max-w-screen-lg bg-stone-800 p-4 rounded-md shadow-md">
   {/* Coordinator Cards */}
   <h1 className="mt-2 text-sm mb-4 text-center text-gray-200">Coordinators</h1>
   <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
     {/* Coordinator Cards */}
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Rittiz Mahanta</p>
       <a href="tel:+6002150653" className="text-green-300 text-sm">6002150653</a>
     </div>
 
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Bikash Borah</p>
       <a href="tel:+8822045466" className="text-green-300 text-sm">8822045466</a>
     </div>
 
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Sankar Jyoti Barpatra</p>
       <a href="tel:+7086932185" className="text-green-300 text-sm">7086932185</a>
     </div>
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Mafruz Nissar Rahman</p>
       <a href="tel:+9127460654" className="text-green-300 text-sm">9127460654</a>
     </div>
 
 
 
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Chirosmit Das</p>
       <a href="tel:+7577830278" className="text-green-300 text-sm">7577830278</a>
     </div>
 
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Bitupan Dangoria</p>
       <a href="tel:+8011735570" className="text-green-300 text-sm">8011735570</a>
     </div>
 
   
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Rohit Kumar Sah</p>
       <a href="tel:+7636048043" className="text-green-300 text-sm">7636048043</a>
     </div> 
 
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Nilabh Bharadwaj</p>
       <a href="tel:+8638686417" className="text-green-300 text-sm">8638686417</a>
     </div>
 
-    <div className="bg-slate-950 p-4 rounded-md shadow-md hover:bg-slate-900 transition duration-300 ease-in-out transform hover:scale-105">
+    <div className="bg-stone-900 p-4 rounded-md shadow-md hover:bg-stone-950 transition duration-300 ease-in-out transform hover:scale-105">
       <p className="text-gray-300 text-sm">Partha Pratim Patra</p>
       <a href="tel:+6000219909" className="text-green-300 text-sm">6000219909</a>
     </div>

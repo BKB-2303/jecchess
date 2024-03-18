@@ -52,10 +52,10 @@ const About = () => {
   };
   
   return (
-    <div className='bg-gradient-to-r  from-slate-800 to-stone-950 min-h-screen'>
-      <div className='bg-indigo-900 bg-opacity-10 p-4'></div>
+    <div className='bg-gradient-to-r  from-stone-900 to-stone-950 min-h-screen'>
+      <div className='bg-stone-900 bg-opacity-10 p-4'></div>
       <header className="flex flex-col items-center justify-center">
-        <img src={JEC} alt="Jorhat Engineering College Logo" className="h-16 border border-indigo-900 md:h-20 mt-4 mb-2" />
+        <img src={JEC} alt="Jorhat Engineering College Logo" className="h-16 border border-stone-950 md:h-20 mt-4 mb-2" />
         <div className="flex items-center mb-4">
           <img src={KnightGambit2} alt="Knight's Gambit Logo" className="h-8 md:h-10 mr-2" />
           <h1 className="text-lg md:text-2xl font-bold text-gray-200">Knight's Gambit 2.0</h1>
@@ -106,7 +106,7 @@ const About = () => {
       
       </div>
       <p className=" text-center text-gray-200 mt-4">Share the images with your friends and fellow chess enthusiasts to spread the excitement of Open Blitz Chess Tournament!</p>
-      <div className="bg-gray-900 bg-opacity-50 p-6 rounded-lg mt-8 mx-auto max-w-6xl">
+      <div className="bg-stone-900 bg-opacity-50 p-6 rounded-lg mt-8 mx-auto max-w-6xl">
    
       <h2 className="text-xl font-bold text-center text-gray-400 mb-4">Organizing Committee</h2>
 
@@ -163,7 +163,7 @@ const About = () => {
       <div className="text-center text-gray-200 mt-4">
   Download Open Blitz Chess Brochure PDF
   <button 
-    className="bg-slate-800 text-white ml-2 sm:ml-4 py-2 px-4 rounded hover:bg-slate-950"
+    className="bg-stone-800 text-white ml-2 sm:ml-4 py-2 px-4 rounded hover:bg-slate-950"
     onClick={() => handleDownload(OpenBlitzChessBrochure, 'openBlitzChessBrochure.pdf')}
   >
     <span className=" sm:inline">
