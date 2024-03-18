@@ -4,7 +4,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import KnightGambit2 from "../assets/knightGambit2.png";
 import JEC from "../assets/JEC_logo.jpg";
-import Knightsgambitposter from '../assets/KnightsGambit2poster.png'
+import Knightsgambitposter from '../assets/KnightsGambit2poster.jpeg'
 import OpenBlitzChessBrochure from '../assets/openBlitzChessBrochure.pdf'; // Import the PDF file
 
 const About = () => {

@@ -391,13 +391,13 @@ const Home = () => {
       Open Category
     </h2>
     <p className="text-sm text-gray-300">1st prize: Rs 5000 + certificate</p>
-    <p className="text-sm text-gray-300">2nd prize: Rs 4000 + certificate</p>
-    <p className="text-sm text-gray-300">3rd prize: Rs 3000 + certificate</p>
-    <p className="text-sm text-gray-300">4th prize: Rs 2500 + certificate</p>
-    <p className="text-sm text-gray-300">5th prize: Rs 2000 + certificate</p>
+    <p className="text-sm text-gray-300">2nd prize: Rs 3000 + certificate</p>
+    <p className="text-sm text-gray-300">3rd prize: Rs 2500 + certificate</p>
+    <p className="text-sm text-gray-300">4th prize: Rs 2000 + certificate</p>
+    <p className="text-sm text-gray-300">5th prize: Rs 1500 + certificate</p>
   
-    <p className="text-sm text-gray-300 sm:text-base">6th - 10th prize: Rs 1200 + certificate</p>
-    <p className="text-sm text-gray-300 sm:text-base">Best JECIAN: Rs 1500 + certificate</p>
+    <p className="text-sm text-gray-300 sm:text-base">6th - 10th prize: Rs 1000 + certificate</p>
+    <p className="text-sm text-gray-300 sm:text-base">Best JECIAN: Rs 1000 + certificate</p>
   </div>
 </div>
 
