@@ -14,9 +14,9 @@ import KG1image5 from '../assets/KG1image5.jpeg'
 import KG1image6 from '../assets/KG1image6.jpeg'
 import BKBbg1 from '../assets/BKB1Bg.png'
 import BKBbg2 from '../assets/BKB2Bg.png'
-
-
-
+import Cherrygarden from '../assets/Cherrygarden.jpg'
+import Lakme from '../assets/Lakme.jpeg'
+import Souka from '../assets/Souka.png'
 
 
 import Map from "../assets/map.png"; 
@@ -81,21 +81,17 @@ const Home = () => {
       text: 'Hotel Prism Jorhat' 
     },
     { 
-      imageSrc: 'https://play-lh.googleusercontent.com/vfcgwewsTEz0t-aV119kMDNtYYOUOffUEWTUyOdFtir6upQMzg5JLzuyQRj_oJXHPXk', 
-      text: 'Gloabal Reach' 
+      imageSrc: Cherrygarden, 
+      text: 'Cherry Garden' 
     },
    
     { 
-      imageSrc: 'https://b2h9h9q9.rocketcdn.me/wp-content/uploads/2020/11/Lakme-Beauty-Parlour-Franchise-Logo.png', 
+      imageSrc: Lakme, 
       text: 'Lakme' 
     },
     { 
-      imageSrc: 'https://scontent.fmaa8-1.fna.fbcdn.net/v/t39.30808-1/320058332_901872547486390_571986540224158317_n.jpg?stp=dst-jpg_p320x320&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_ohc=I9DEdTWYJzEAX-MAnPM&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfCZYADZG7NpXfi0KRG9tcelXrdH_4ArTfBh2KQztBJvbA&oe=65FCC3FF', 
-      text: 'Baishya Barbershop Jorhat ' 
-    },
-    { 
-      imageSrc: 'https://scontent.fmaa8-1.fna.fbcdn.net/v/t39.30808-6/341015892_3547001635624478_3670067144127997495_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YvPAKtxK2OoAX9Y5Alu&_nc_ht=scontent.fmaa8-1.fna&oh=00_AfCMdpLAmZ6lOPbaBdht1w73TXWH6aZcIDOJ3VP96EM3Sg&oe=65FC8C5B', 
-      text: 'Eco Service' 
+      imageSrc: Souka, 
+      text: 'চৌকা ' 
     },
   ];
   
@@ -334,15 +330,19 @@ const Home = () => {
 
         {/* Box 2 */}
         <div className="bg-stone-800 bg-opacity-70 p-2 rounded-md shadow-md hover:bg-stone-900 transition duration-300 ease-in-out transform hover:scale-105">
-          <h2 className="text-base mb-2  font-modern-antiqua text-gray-400 ">
+          <h2 className="text-sm mb-2  font-modern-antiqua text-gray-400 ">
             🌟 Tournament Schedule 🌟
           </h2>
-          <p className="text-gray-300">1st Round: 9:30AM</p>
-          <p className="text-gray-300">2nd Round: 10:15AM</p>
-          <p className="text-gray-300">3rd Round: 11:00AM</p>
-          <p className="text-gray-300">4th Round: 11:45AM</p>
-          <p className="text-gray-300">5th Round: 12:30PM</p>
-          <p className="text-gray-300">6th Round: 1:15PM</p>
+          <p className="text-gray-300">Innaguration: 10:00AM</p>
+
+          <p className="text-gray-300">1st Round: 10:30AM</p>
+          <p className="text-gray-300">2nd Round: 11:15AM</p>
+          <p className="text-gray-300">3rd Round: 12:00AM</p>
+          <p className="text-gray-300">4th Round: 12:45AM</p>
+          <p className="text-gray-300">5th Round: 1:30PM</p>
+          <p className="text-gray-300">6th Round: 2:15PM</p>
+          <p className="text-gray-300">Closing Ceremony:3:00PM</p>
+
           <p className="text-gray-300">*Number of rounds cited above may be more or less depending upon number of registered participants</p>
         </div>
       </div>
@@ -352,7 +352,7 @@ const Home = () => {
       <AliceCarousel {...carouselSettings}>
     {carouselItems.map((item, index) => (
       <div key={index}>
-        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image   mx-auto h-32 w-36" />
+        <img src={item.imageSrc} alt={`Carousel Image ${index + 1}`} className="carousel-image font-mono  mx-auto h-32 w-36" />
         <p className="text-center mt-2 text-gray-200">{item.text}</p>
       </div>
     ))}

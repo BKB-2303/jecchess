@@ -4,7 +4,7 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import KnightGambit2 from "../assets/knightGambit2.png";
 import JEC from "../assets/JEC_logo.jpg";
-import B1 from '../assets/b1.jpeg';
+import Knightsgambitposter from '../assets/KnightsGambit2poster.png'
 import OpenBlitzChessBrochure from '../assets/openBlitzChessBrochure.pdf'; // Import the PDF file
 
 const About = () => {
@@ -75,7 +75,7 @@ const About = () => {
       {/* Grid of images */}
       <div className="grid grid-cols-1 md:grid-cols-1 gap-4 p-4 mx-auto max-w-screen-lg border border-indigo-950">
         <div className="relative">
-          <img className="h-[300px] md:h-[500px] w-full rounded-lg" src={B1} alt="" />
+          <img className="h-[300px] md:h-[500px] w-full rounded-lg" src={Knightsgambitposter} alt="" />
           <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 flex justify-between items-center p-2">
             <button className="text-gray-200 font-bold text-sm mr-2" onClick={() => handleDownload(B1)}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -105,7 +105,7 @@ const About = () => {
         </div> */}
       
       </div>
-      <p className=" text-center text-gray-200 mt-4">Share the images with your friends and fellow chess enthusiasts to spread the excitement of Open Blitz Chess Tournament!</p>
+      <p className=" text-center text-gray-200 mt-4">Share this poster with your friends and fellow chess enthusiasts to spread the excitement of Open Blitz Chess Tournament!</p>
       <div className="bg-stone-900 bg-opacity-50 p-6 rounded-lg mt-8 mx-auto max-w-6xl">
    
       <h2 className="text-xl font-bold text-center text-gray-400 mb-4">Organizing Committee</h2>
