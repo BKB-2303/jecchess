@@ -320,7 +320,7 @@ const Home = () => {
           
           <p className="text-gray-200">
             Venue:{" "}
-            <span className="text-gray-400  ">NB 207,Drawing hall</span>
+            <span className="text-gray-400  ">OB 207,Drawing hall</span>
           </p>
           <p className="text-gray-200">
             
