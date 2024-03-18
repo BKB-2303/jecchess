@@ -75,7 +75,7 @@ const About = () => {
       {/* Grid of images */}
       <div className="grid grid-cols-1 md:grid-cols-1 gap-4 p-4 mx-auto max-w-screen-lg border border-indigo-950">
         <div className="relative">
-          <img className="h-[300px] md:h-[500px] w-full rounded-lg" src={Knightsgambitposter} alt="" />
+          <img className="h-[300px] md:h-[600px] w-full rounded-lg" src={Knightsgambitposter} alt="" />
           <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 flex justify-between items-center p-2">
             <button className="text-gray-200 font-bold text-sm mr-2" onClick={() => handleDownload(B1)}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
