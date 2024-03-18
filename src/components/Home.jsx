@@ -135,19 +135,19 @@ const Home = () => {
         style={{ backgroundImage: `url(${ECLECTIC_EUPHORIA})` }}
       ></div> */}
 <div className="relative bg-cover bg-center bg-opacity-50  " style={{ backgroundImage: `url(${BKBbg1})` }}>
-<nav className="bg-white ">
+<nav className="bg-stone-900  bg-opacity-70 ">
   <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
 
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       
       <img src={KnightGambit2} className="h-8" alt="KnightGambit2" />
-      <span className="self-center text-stone-900  text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
+      <span className="self-center text-gray-200  text-sm font-semibold whitespace-nowrap">Knight's Gambit 2.0</span>
     </a>
 
     {/* Mobile Menu Button */}
     <button
       onClick={handleMobileMenuToggle}
-      className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-stone-950 border border-stone-950 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+      className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-400 border border-gray-400 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
       aria-controls="navbar-default"
       aria-expanded={isMobileMenuOpen}
     >
@@ -192,16 +192,16 @@ const Home = () => {
     <div className=" md:flex md:items-center md:w-auto hidden" id="navbar-default">
       <ul className="font-medium flex flex-col md:flex-row md:space-x-8 rtl:space-x-reverse">
         <li>
-          <a href="/" className="block py-2 px-3 text-stone-950  rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
+          <a href="/" className="block py-2 px-3 text-gray-200 hover:bg-stone-400   rounded md:bg-transparent md:p-0" aria-current="page">Home</a>
         </li>
         <li>
-          <a href="#coordinators" className="block py-2 px-3 text-stone-950 rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
+          <a href="#coordinators" className="block py-2 px-3 text-gray-200 rounded hover:bg-stone-400 md:hover:bg-transparent md:border-0 md:p-0">Contact</a>
         </li>
         <li>
-          <a href="#gallery" className="block py-2 px-3 text-stone-950 rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">Gallery</a>
+          <a href="#gallery" className="block py-2 px-3 text-gray-200 rounded hover:bg-stone-400 md:hover:bg-transparent md:border-0 md:p-0">Gallery</a>
         </li>
         <li>
-          <a href="/formore" className="block py-2 px-3 text-stone-950 rounded hover:bg-slate-400 md:hover:bg-transparent md:border-0 md:p-0">For More</a>
+          <a href="/formore" className="block py-2 px-3 text-gray-200 rounded hover:bg-stone-400 md:hover:bg-transparent md:border-0 md:p-0">For More</a>
         </li>
       </ul>
     </div>
