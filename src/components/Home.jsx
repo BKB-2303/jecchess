@@ -333,7 +333,7 @@ const Home = () => {
           <h2 className="text-sm mb-2  font-modern-antiqua text-gray-400 ">
             🌟 Tournament Schedule 🌟
           </h2>
-          <p className="text-gray-300">Innaguration: 10:00AM</p>
+          <p className="text-gray-300">Inaguration: 10:00AM</p>
 
           <p className="text-gray-300">1st Round: 10:30AM</p>
           <p className="text-gray-300">2nd Round: 11:15AM</p>
