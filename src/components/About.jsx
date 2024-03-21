@@ -6,7 +6,7 @@ import KnightGambit2 from "../assets/knightGambit2.png";
 import JEC from "../assets/JEC_logo.jpg";
 import Knightsgambitposter from '../assets/KnightsGambit2poster.jpeg'
 import OpenBlitzChessBrochure from '../assets/openBlitzChessBrochure.pdf'; // Import the PDF file
-
+import Arbiter from '../assets/Proudly welcomes International FIDE Arbiter.png'
 const About = () => {
 
   const handleDownload1 = (url, filename) => {
@@ -73,7 +73,7 @@ const About = () => {
       <p className="text-center text-gray-200 mt-4 mb-4">"Jorhat Engineering College Presents: Knight's Gambit 2.0 - Where Minds Clash and Kings Reign!"</p>
 
       {/* Grid of images */}
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-4 p-4 mx-auto max-w-screen-lg border border-indigo-950">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 mx-auto max-w-screen-lg border border-indigo-950">
         <div className="relative">
           <img className="h-[300px] md:h-[600px] w-full rounded-lg" src={Knightsgambitposter} alt="" />
           <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 flex justify-between items-center p-2">
@@ -88,8 +88,8 @@ const About = () => {
 </button>
           </div>
         </div>
-        {/* <div className="relative">
-          <img className="h-[300px] md:h-[400px] w-full rounded-lg" src={B1} alt="" />
+        <div className="relative">
+          <img className="h-[300px] md:h-[600px] w-full rounded-lg" src={Arbiter} alt="" />
           <div className="absolute bottom-0 left-0 right-0 bg-gray-800 bg-opacity-50 flex justify-between items-center p-2">
             <button className="text-gray-200 font-bold text-sm mr-2" onClick={() => handleDownload(B1)}><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -102,10 +102,12 @@ const About = () => {
 </button>
 
           </div>
-        </div> */}
+        </div>
       
       </div>
-      <p className=" text-center text-gray-200 mt-4">Share this poster with your friends and fellow chess enthusiasts to spread the excitement of Open Blitz Chess Tournament!</p>
+      <p className=" text-center text-gray-200 mt-4">Share this posters with your friends and fellow chess enthusiasts to spread the excitement of Open Blitz Chess Tournament!</p>
+  
+     
       <div className="bg-stone-900 bg-opacity-50 p-6 rounded-lg mt-8 mx-auto max-w-6xl">
    
       <h2 className="text-xl font-bold text-center text-gray-400 mb-4">Organizing Committee</h2>

@@ -76,10 +76,10 @@ const Home = () => {
   ];
   
   const carouselItems = [
-    { 
-      imageSrc: 'https://hotelprismjorhat.com/wp-content/uploads/2023/09/cropped-WhatsApp-Image-2023-09-16-at-11.45.55.jpeg', 
-      text: 'Hotel Prism Jorhat' 
-    },
+    // { 
+    //   imageSrc: 'https://hotelprismjorhat.com/wp-content/uploads/2023/09/cropped-WhatsApp-Image-2023-09-16-at-11.45.55.jpeg', 
+    //   text: 'Hotel Prism Jorhat' 
+    // },
     { 
       imageSrc: Cherrygarden, 
       text: 'Cherry Garden' 
