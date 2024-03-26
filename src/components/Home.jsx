@@ -76,23 +76,25 @@ const Home = () => {
   ];
   
   const carouselItems = [
-    // { 
-    //   imageSrc: 'https://hotelprismjorhat.com/wp-content/uploads/2023/09/cropped-WhatsApp-Image-2023-09-16-at-11.45.55.jpeg', 
-    //   text: 'Hotel Prism Jorhat' 
-    // },
     { 
-      imageSrc: Cherrygarden, 
-      text: 'Cherry Garden' 
+      imageSrc:'https://hotelprismjorhat.com/wp-content/uploads/2023/09/cropped-WhatsApp-Image-2023-09-16-at-11.45.55.jpeg', 
+      text: 'Prism ' 
+    },
+    { 
+      imageSrc:"https://scontent.fgau1-2.fna.fbcdn.net/v/t39.30808-6/298781580_584192596825356_2411224862325871648_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=98QcIJOAr5oAX-ubxy_&_nc_ht=scontent.fgau1-2.fna&oh=00_AfBWO8ERRVqS3XqcDrjQ5WtTZeKfbU1xhXUTKmtxHgLsiw&oe=66026EF3", 
+      text: 'Guwahati Tutorials' 
     },
    
-    { 
-      imageSrc: Lakme, 
-      text: 'Lakme' 
-    },
+  
     { 
       imageSrc: Souka, 
       text: 'চৌকা ' 
     },
+    { 
+      imageSrc: Lakme, 
+      text: 'Lakme Salon ' 
+    },
+
   ];
   
   const carouselSettings = {
