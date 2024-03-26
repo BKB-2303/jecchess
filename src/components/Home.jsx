@@ -81,7 +81,7 @@ const Home = () => {
       text: 'Prism ' 
     },
     { 
-      imageSrc:"https://scontent.fgau1-2.fna.fbcdn.net/v/t39.30808-6/298781580_584192596825356_2411224862325871648_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=98QcIJOAr5oAX-ubxy_&_nc_ht=scontent.fgau1-2.fna&oh=00_AfBWO8ERRVqS3XqcDrjQ5WtTZeKfbU1xhXUTKmtxHgLsiw&oe=66026EF3", 
+      imageSrc:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVtkgS_st6sjg8G3dWdI5M2wUA1TCo3rpxD_qaBIT2eg&s", 
       text: 'Guwahati Tutorials' 
     },
    
