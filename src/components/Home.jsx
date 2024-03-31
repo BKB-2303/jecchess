@@ -216,11 +216,7 @@ const Home = () => {
  
 
 
-  {/* <img
-    src={ECLECTIC_EUPHORIA}
-    alt="ECLECTIC_EUPHORIA"
-    className="h-40 mb-2 transition-transform animate-scale-continuous transform hover:scale-110 animate-scale"
-  /> */}
+
   <div className="flex items-center mb-2">
     <img
       src={ECLECTIC_EUPHORIA}
@@ -257,7 +253,7 @@ const Home = () => {
 </div>
 
   <div className="flex items-center mt-2">
-    {/* Add your icon image here */}
+
     <img src={KnightGambit2} alt="Icon" className="h-8 w-8 mr-2 transform hover:scale-110 animate-scale" />
     <h1 className="text-2xl text-gray-200 font-mono transform hover:scale-110 animate-scale">Knight's Gambit</h1>
   </div>
@@ -312,9 +308,13 @@ const Home = () => {
           </p>
 
           <p className="text-gray-200 mt-2">
-            Last Date of Registration:{" "}
-            <span className="text-stone-300  font-bold">22 March, 2024</span>
-          </p>
+    Last Date of Registration:{" "}
+    <span className="text-stone-300  font-bold">
+        <span className="line-through">22 March, 2024  </span>
+        <span className="text-red-500">closed</span>
+    </span>
+</p>
+
           <p className="text-gray-200">
             Date:{" "}
             <span className="text-gray-400 ">23 March, 2024</span>
@@ -369,22 +369,6 @@ const Home = () => {
     </a>
 </div>
 
-      {/* <div className="mt-8 mx-auto max-w-screen-lg p-4 rounded-md shadow-md">
-       
-        <p className="text-gray-200 text-base">
-        "Join 'Knights Gambit 2.0' at Phoenix 2024. It's not just a game; it's a battle of wits and strategy. Let's find the true chess champion!"
-        </p>
-        <button
-          onClick={handleRegisterClick}
-          className="bg-green-300  hover:bg-green-400  text-black font-bold py-3 px-8 rounded-full mt-4 transition duration-300 ease-in-out transform hover:scale-105"
-        >
-          <span className="animate-pulse">
-          Register Now
-          </span>
-         
-        </button> 
-        
-      </div> */}
       <div className="relative bg-cover bg-center bg-opacity-50  " style={{ backgroundImage: `url(${BKBbg2})` }}>
       <div className="my-8 mx-auto max-w-screen-xl bg-opacity-70 p-4">
   {/* Box 1 - Open Category */}
@@ -525,7 +509,7 @@ const Home = () => {
 </div>
 
 
-<h1 id="gallery" className="mt-4 mb-4 text-center text-lg text-indigo-200 font-bold">Knight's Gambit 1.0 Gallery</h1>
+<h1 id="gallery" className="mt-4 mb-4 text-center text-lg text-indigo-200 font-bold">Knight's Gambit 1.0 + 2.0 Gallery</h1>
 
 <AliceCarousel {...carouselSettingsGallery}>
   {galleryItems.map((item, index) => (
